@@ -1,0 +1,60 @@
+<div id="home-depot-currency-converter-widget" class="container">
+
+  <div class="col-md-5">
+    <div class="thumbnail">
+      <div class="caption">
+        <h4 ng-bind="::currency.TXT.heading"></h4>
+        <p class="height-gap" ng-bind="::currency.TXT.subHeading"></p>
+
+        <div class="row">
+          <div class="col-md-6">
+            <input type="number" ng-keyup="currency.convertCurrency($event)" ng-model="currency.fromAmount" class="form-control" />
+          </div>
+          <div class="col-md-4">
+            <select ng-model="currency.fromCurrency" ng-change="currency.currencyBaseChange()" class="form-control btn-info">
+              <option ng-repeat="cur in currency.currencyList" value="{{cur}}">{{cur}}</option>
+            </select>
+          </div>
+        </div>
+
+
+
+
+        <div class="row">
+          <div class="col-md-5">
+            <p class="height-gap" ng-bind="::currency.TXT.convertedAmount"></p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <input type="number" ng-model="currency.toAmount" class="form-control" />
+          </div>
+          <div class="col-md-4">
+            <select ng-model="currency.toCurrency" ng-change="currency.currencyChange()" class="form-control btn-info">
+              <option ng-repeat="cur in currency.currencyList" value="{{cur}}">{{cur}}</option>
+            </select>
+          </div>
+        </div>
+
+        <p></p>
+
+        <div class="row">
+          <div class="col-md-5 pull-right">
+            <a id="disclaimer" tabindex="0" popover-placement="top" popover-trigger="click" uib-popover="Exchange Rate ">
+                <span class="height-gap" ng-bind="::currency.TXT.disclaimer"></span>
+            </a>
+          </div>
+        </div>
+
+
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
