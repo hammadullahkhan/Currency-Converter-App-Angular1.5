@@ -37,25 +37,18 @@
 
                 <div class="row">
                   <div class="col-md-3 pull-right dislaimer-alignment">
-                    <a id="disclaimer" tabindex="0" role="button"
-                    title="{{currency.TXT.exchangeRates}} " data-content="{{currency.exRateInfo}}"
-                    data-toggle="popover" data-trigger="focus" placement="right">
-                        <span class="height-gap" ng-bind="::currency.TXT.disclaimer"></span>
+
+                    <a id="disclaimer" tabindex="0" role="button" href="#"
+                      popover-title="{{currency.TXT.exchangeRates}} "
+                      uib-popover="Provided by Fixer.io"
+                      popover-trigger="outsideClick"
+                      popover-placement="bottom">
+                      <span ng-bind="currency.TXT.disclaimer"></span>
                     </a>
+
                   </div>
                 </div>
           </div>
         </div>
     </div>
 </div>
-
-
-
-<script>
-//HACK -- should be moved to controller, but its late now :)
-$(document).ready(function(){
-    $('[data-toggle="popover"]').popover({
-      container: 'body'
-    });
-});
-</script>

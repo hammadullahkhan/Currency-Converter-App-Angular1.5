@@ -9,7 +9,8 @@ import "angular-resource";
 
 import "jquery";
 
-import "bootstrap";
+
+
 
 
 // local scripts
