@@ -2,7 +2,7 @@
 Simple currency app based on Angular 1.5, ES6, Webpack2, Browserify, SaaS, NodeJS
 
 API
-fixer.io API to get the latest exchange rates.
+- fixer.io API to get the latest exchange rates.
 
 Prerequisites
 - Node
