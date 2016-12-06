@@ -1,5 +1,5 @@
-# Home Depot Currency Converter App
-Simple currency app based on Angular 1.5, Webpack2, Browserify, SaaS
+# Currency Converter App
+Simple currency app based on Angular 1.5, Webpack2, Browserify, SaaS, NodeJS
 
 API
 fixer.io API to get the latest exchange rates.
