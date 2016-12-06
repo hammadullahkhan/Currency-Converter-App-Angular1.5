@@ -12,6 +12,7 @@ export default class CurrencyCtrl {
 
         var vm = this;
         var exRates = {};
+        let LANG = {};
 
         init();
 
@@ -24,7 +25,7 @@ export default class CurrencyCtrl {
           vm.exRateInfo = "";
           vm.currencyList = ['CAD', 'USD', 'EUR'];
 
-          vm.TXT = EN;
+          vm.TXT =  LANG === "FR" ? FR : EN;
 
           exRates = {
             rates: {},
@@ -32,7 +33,6 @@ export default class CurrencyCtrl {
           };
 
           getExchangeRates();
-
         }
 
         var convert = function(amount, opts) {
