@@ -1,5 +1,5 @@
 # Currency Converter App
-Simple currency app based on Angular 1.5, ES6, Webpack2, Browserify, SaaS, NodeJS
+Simple currency app based on Angular 1.5, ES6, Babel, Webpack2, Browserify, SaaS, NodeJS
 
 API
 - fixer.io API to get the latest exchange rates.
